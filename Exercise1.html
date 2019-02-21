@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Validate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        function verify() {
+            if (document.getElementById('password').value !=
+                document.getElementById('password-verify').value) {
+                alert("Passwords do not match!!!");
+            }
+        }
+    </script>
+    <form onsubmit="verify()">
+        Enter Password (8 characters minimum):<br>
+        <input type="password" id="password" minlength="8" required><br>
+        Confirm Password:<br>
+        <input type="password" id="password-verify" >
+        <input type="submit" value="Validate" required>
+      </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Slideshow
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        let imgnum = 0
+        function forward() {
+            imgnum += 1;
+            document.getElementById('slideshow').src = 'img/coffee-' + String(imgnum % 5 + 1) + '.jpg';
+        }
+        function back() {
+            imgnum -= 1;
+            document.getElementById('slideshow').src = 'img/coffee-' + String(imgnum % 5 + 1) + '.jpg';
+        }
+    </script>
+    <img id="slideshow" height="900" width="1600" src="img/coffee-1.jpg">
+    <button onclick="back()" type="button">Back</button>
+    <button onclick="forward()" type="button">Foreward</button>
+</body>
+</html>
