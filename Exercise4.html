@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "main.css">
+        <title>CSS Manipulation</title>
+    </head>
+    <body>
+            <script>
+                    function change(){
+                        var mytag = document.getElementById("parag");
+                        mytag.style.backgroundColor = `rgb(${document.getElementById("bg-red").value}, ${document.getElementById("bg-blue").value}, ${document.getElementById("bg-green").value})`;
+                        mytag.style.borderColor = `rgb(${document.getElementById("b-red").value}, ${document.getElementById("b-blue").value}, ${document.getElementById("b-green").value})`;
+                        mytag.style.borderWidth = document.getElementById("bdw").value
+                    }
+                </script>
+
+<form onclick="change()">
+        <h1>Border</h1>
+        <br>
+        Red: <input type="text" id="b-red">
+        <br>
+        Blue: <input type="text" id="b-blue">
+        <br>
+        Green: <input type="text"  id="b-green">
+        <br>
+        Width: <input type="text" id="b-width">
+        <h1>Background</h1>
+        <br>
+        Red: <input type="text"  id ="bg-red">
+        <br>
+        Blue: <input type="text"id = "bg-blue">
+        <br>
+        Green: <input type="text" id = "bg-green">
+        <br>
+        <input type="button" value="Change">
+    </form>
+    <p id = "parag"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </body>
+</html>

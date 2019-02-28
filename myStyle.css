@@ -1,0 +1,28 @@
+p
+{
+    background-color: red;
+    color: white;
+    font-family: arial
+    font-size: 22pt;
+}
+body
+{
+    background-color: red;
+}
+a
+{
+    background-color: blue;
+    color: red;
+}
+
+a:hover
+{
+    background-color: red;
+    color: blue
+}
+
+p.halloween
+{
+    color: orange;
+    background-color: black;
+}
